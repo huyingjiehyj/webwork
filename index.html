@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#head{
+			width: 100%;
+			height: 30px;
+			background-color: #f4f4f4;
+		}
+		#head_body{
+			width: 1200px;
+			height: 30px;
+			margin: 0 auto;
+			background-color: #f4f4f4;
+		}
+		#head_body1{
+			float: left;
+			height: 30px;
+			line-height: 30px;
+		}
+		#head_body2{
+			float: left;
+			margin-left: 10px;
+			height: 30px;
+			line-height: 30px;
+		}
+		#head_body3{
+			float: left;
+			margin-left: 10px;
+			height: 30px;
+			line-height: 30px;
+			background-image: url(img/6.png);
+			background-repeat: no-repeat;
+			background-position: 0px 7px;
+			padding-left: 20px;
+		}	
+		#head_body4{
+			height: 30px;
+			line-height: 30px;
+			float: right;
+		}
+		#head_body5{
+			height: 30px;
+			line-height: 30px;
+			float: right;
+			margin-right: 9px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		#head2{
+			width: 100%;
+			height: 120px;
+		}
+		#head2_body{
+			margin: 0 auto;
+			width: 1200px;
+			height: 120px;
+			background-image: url(img/1.png);
+			background-repeat: no-repeat;
+			background-position: 0px 17px;
+			padding-top: 40px;
+		}
+		#head2_body1{
+			width: 520px;
+			height: 40px;
+			display: inline-block;
+			margin-left: 355px;
+		}
+		#input1{
+			border-top: 2px solid #f83838;
+			border-left: 2px solid #f83838;
+			border-bottom: 2px solid #f83838;
+			border-right:none;
+			width: 400px;
+			height: 38px;
+			color: #c6c6c6;
+			text-indent: 1em;
+			font-size: 14px;
+			font-family: '微软雅黑';
+			float: left;
+		}
+		#input2{
+			width: 95px;
+			height: 41px;
+			color: white;
+			border: 2px solid #f83838;
+			background-color: #f83838;
+			font-family: '微软雅黑';
+			font-size: 15px;
+			float: left;
+		}
+		#head2_body2{
+			width: 150px;
+			height: 40px;
+			background-image: url(img/8.png);
+			background-repeat: no-repeat;
+			background-position: 26px 10px;
+			background-color: #f5f5f5;
+			border:1px solid #e3e3e3;
+			float: right;
+			display: inline-block;
+			margin-left: 155px;
+			margin-right: 10px;
+		}
+		#shop{
+			padding-left: 47px;
+			padding-top: 9px;
+		}
+		span{
+			color: #f83838;
+		}
+		#head3{
+			width: 100%;
+			height: 40px;
+			border-bottom: 3px solid #e00304;
+		}
+		#head3_body{
+			width: 1200px;
+			height: 40px;
+			margin: 0 auto;
+		}
+		li{
+			color: black;
+			width: 90px;
+			height: 37px;
+			display: inline-block;
+			text-align: center;
+			line-height: 37px;
+			font-family: '微软雅黑';
+			border-radius: 4px;
+		}
+		li:hover{
+			background-color: #fd0304;
+			color: white;
+		}
+		#body{
+			width: 100%;
+			height: 655px;
+		}
+		#body_body{
+			width: 1200px;
+			height: 655px;
+			margin: 0 auto;
+		}
+		#body_left{
+			width: 227px;
+			height: 655px;
+			float: left;
+		}
+		#body_left1{
+			width: 227px;
+			height: 70px;
+			line-height: 70px;
+		}
+		#body_left2{
+			width: 227px;
+			height: 53px;
+			line-height: 53px;
+			text-align: center;
+			background-image: url(img/7.png);
+			background-repeat: no-repeat;
+			background-position: 40px 18px;
+		}
+		#body_left3{
+			padding-top: 20px;
+		}
+		#body_left3_body{
+			width: 75px;
+			margin: 0 auto;
+		}
+		#body_right{
+			width: 973px;
+			height: 655px;
+			float: right;
+		}
+		#small{
+			width: 222px;
+			height: 253px;
+			border:1px solid #dbdbdb;
+			text-align: center;
+			line-height: 30px;
+			float: left;
+			margin-left: 15px;
+			margin-bottom: 15px;
+			font-family: '微软雅黑'
+		}
+		#price{
+			color: #dbdbdb
+		}
+		#body_right_body{
+			width: 957px;
+			height: 520px;
+			float: left;
+			margin-top: 83px;
+		}
+		#bottom1{
+			width: 100%;
+			height: 150px;
+			background-color: #2e2e2e;
+		}
+		#bottom1_body{
+			width: 1200px;
+			height: 150px;
+			margin: 0 auto;
+		}
+		#bottom_small1{
+			width: 284px;
+			height: 150px;
+			line-height: 30px;
+			padding-top: 15px;
+			color: white;
+			float: left;
+		}
+		#bottom_small2{
+			width: 272px;
+			height: 150px;
+			line-height: 30px;
+			padding-top: 15px;
+			color: white;
+			float: left;
+		}
+		#bottom_small3{
+			width: 272px;
+			height: 150px;
+			line-height: 30px;
+			padding-top: 15px;
+			color: white;
+			float: left;
+		}
+		#bottom_small4{
+			width: 272px;
+			height: 150px;
+			line-height: 30px;
+			padding-top: 15px;
+			color: white;
+			float: left;
+		}
+		#bottom_small5{
+			width: 100px;
+			height: 150px;
+			line-height: 30px;
+			padding-top: 15px;
+			color: white;
+			float: left;
+		}
+		#bottom2{
+			width: 100%;
+			height: 98px;
+			background-color: #2e2e2e;
+		}
+		#bottom2_body{
+			width: 1200px;
+			height: 98px;
+			margin: 0 auto;
+			font-family: '微软雅黑';
+			color: #848484;
+			border-top: 1px solid #454545;
+			font-size: 14px;
+		}
+		#bottom_one{
+			margin: 0 auto;
+			width: 560px;
+			text-align: center;
+
+		}
+		#bottom_two{
+			margin: 0 auto;
+			width: 580px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div id="head">
+	<div id="head_body">
+		<div id="head_body1">我的收藏</div>
+		<div id="head_body2">E族之家手机版</div>
+		<div id="head_body3">328203328</div>
+		<div id="head_body4">欢迎加入E族之家，<a href="#">请登录</a>|<a href="#">注册</a></div>
+		<div id="head_body5">扫描加入</div>
+	</div>
+</div>
+<div id="head2">
+	<div id="head2_body">
+		<div id="head2_body1">
+			<div id="left">
+				<form>
+					<input id="input1" type="text" name="关键词" value="请输入关键词！">
+				</form>
+			</div>
+			<div id="right">
+				<form>
+				<input id="input2" type="submit" name="sub" value="搜索">
+				</form>
+			</div>
+		</div>
+		<div id="head2_body2">
+			<div id="shop">
+			购物车(<span>0</span>)件
+			</div>
+		</div>
+	</div>
+</div>
+<div id="head3">
+	<div id="head3_body">
+		<ul>
+			<li>首页</li>
+			<li>E族生活</li>
+			<li>E族服务</li>
+			<li>E族爱心</li>
+		</ul>
+	</div>
+</div>
+<div id="body">
+	<div id="body_body">
+		<div id="body_left">
+		<div id="body_left1">当前位置：E族爱心>食品</div>
+		<div id="body_left2">全部分类</div>
+		<div id="body_left3">
+			<div id="body_left3_body"><p><span>>食品</span></p><br><p>>生活用品</p></div>
+			</div>
+		</div>
+		<div id="body_right">
+			<div id="body_right_body">
+				<div id="small">
+					<div id="img"><img src="img/2.png"></div>
+					<p id="price">精品辣椒100g</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/3.png"></div>
+					<p id="price">特级百香果3斤</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/4.png"></div>
+					<p id="price">万威啤酒500ml</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/5.png"></div>
+					<p id="price">万威啤酒500ml</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/2.png"></div>
+					<p id="price">精品辣椒100g</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/3.png"></div>
+					<p id="price">特级百香果3斤</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/4.png"></div>
+					<p id="price">万威啤酒500ml</p>¥90.00
+				</div>
+				<div id="small">
+					<div id="img"><img src="img/5.png"></div>
+					<p id="price">万威啤酒500ml</p>¥90.00
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bottom1">
+	<div id="bottom1_body">
+		<div id="bottom_small1">新手上路<br>售后流程<br>购物流程<br>订购方式</div>
+		<div id="bottom_small2">配送方式<br>货到付款区域<br>配送支付查询<br>支付方式说明</div>
+		<div id="bottom_small3">购物指南<br>常见问题<br>订购流量<br>注册新会员</div>
+		<div id="bottom_small4">售后服务<br>退换货原则<br>售后服务保证<br>换货流程</div>
+		<div id="bottom_small5">关于我们<br>网络故障报告<br>联系我们<br>投诉与建议</div>
+	</div>
+</div>
+<div id="bottom2">
+	<div id="bottom2_body">
+		<div id="bottom_one">
+		E族生活&nbsp;&nbsp;|&nbsp;&nbsp;居家维修保养&nbsp;&nbsp;|&nbsp;&nbsp;住宿优惠信息&nbsp;&nbsp;|&nbsp;&nbsp;出行接送&nbsp;&nbsp;|&nbsp;&nbsp;E族活动&nbsp;&nbsp;|&nbsp;&nbsp;E族爱心&nbsp;&nbsp;|&nbsp;&nbsp;积分商城
+		</div>
+		<br>
+		<div id="bottom_two">
+		<img src="img/9.png">
+		2017-2018&nbsp;E族之家&nbsp;版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号
+		</div>
+	</div>
+</div>
+</body>
+</html>
